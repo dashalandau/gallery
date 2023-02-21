@@ -1,0 +1,46 @@
+body {
+    max-width: 780px;
+    height: 768px;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+.conteiner {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+}
+
+.img-wrap {
+    position: relative;
+    flex: 0 1 calc(20% - 10px);
+    height: 150px;
+    margin: 5px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    transition: border-color .2s;   
+}
+.img-wrap:focus {
+    border-color: rgb(11, 146, 224);
+}
+
+.img-wrap:focus-visible {
+    outline: none
+ }
+
+.focus {
+    border: 3px solid rgb(11, 146, 224);
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
